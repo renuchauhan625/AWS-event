@@ -42,8 +42,7 @@ jobs:
         run: docker build -t sdk1:bmo .
 
       - name: Run Docker Container
-        run: docker run -it -p 80:80 win-app-container
-
+        run: docker run --rm -it -p 80:80 sdk1
 
       - name: List Local Docker Images
         run: docker images
