@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build and Push Image
-    runs-on: aws-ecs-windows-hosted
+    runs-on: aws-event
 
     steps:
       - name: Check out code
