@@ -42,7 +42,7 @@ jobs:
         run: docker build -t sdk1:bmo .
 
       - name: Run Docker Container
-        run: winpty docker run --rm  -p 80:80 sdk1
+        run: docker run --rm  -p 80:80 sdk1
 
       - name: List Local Docker Images
         run: docker images
